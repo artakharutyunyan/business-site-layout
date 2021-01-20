@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My company</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/fractionslider.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+  <div class="page main-page">
+    <header>
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="translate-menu">
+          <ul id="menu-main_menu" class="menu">
+            <li class="menu-item sub-menu-item">
+              <a href="#services">Services</a>
+              <div class="drop-down-menu">
+                <ul>
+                  <li>
+                    <a href="./software-development.html">Software development</a>
+                  </li>
+                  <li>
+                    <a href="./mobile-applications.html">Mobile applications</a>
+                  </li>
+                  <li>
+                    <a href="./seo-optimization.html">SEO - optimization</a>
+                  </li>
+                  <li>
+                    <a href="./turnkey-sites.html">Turnkey sites</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item sub-menu-item">
+              <a href="#" onclick="return false;">Sites</a>
+              <div class="drop-down-menu">
+                <ul>
+                  <li>
+                    <a href="./landing-page.html">Landing page</a>
+                  </li>
+                  <li>
+                    <a href="./business-card-website.html">Business card website</a>
+                  </li>
+                  <li>
+                    <a href="./online-store.html">Online store</a>
+                  </li>
+                  <li>
+                    <a href="./corporate-website.html">Corporate website</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#clients">Our clients</a>
+            </li>
+            <li class="menu-item">
+              <a href="#directions">Directions</a>
+            </li>
+            <li class="menu-item">
+              <a href="#technologies">Technologies</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"></button>
+      </div>
+    </header>
+
+    <div class="welcome-section">
+      <div class="heading">
+        <div class="slider-heading">
+          <div class="wrapper-slides">
+            <div class="slide" data-in="fade">
+              <div class="block-img" data-fixed
+                style="background-image: url('./assets/images/main-page/slider/first-slide.jpg')">
+                <div class="blackout"></div>
+              </div>
+              <h1 data-out="left">
+                <span class="container">Our company is</span>
+              </h1>
+              <div data-delay="400" data-out="left" class="text">
+                <span class="container">development of flexible tools for automating your business</span>
+              </div>
+              <div class="button-feed-back container" data-in="bottom" data-out="left" data-delay="500">
+                <button>Request a call</button>
+              </div>
+            </div>
+            <div class="slide" data-in="fade">
+              <div class="block-img" data-fixed
+                style="background-image: url('./assets/images/main-page/slider/second-slide.jpg')">
+                <div class="blackout"></div>
+              </div>
+              <h1 data-out="left">
+                <span class="container">Our products</span>
+              </h1>
+              <div data-delay="400" data-out="left" class="text">
+                <span class="container">bring your ideas to life</span>
+              </div>
+              <div class="button-feed-back container" data-in="bottom" data-out="left" data-delay="500">
+                <button>Request a call</button>
+              </div>
+            </div>
+            <div class="slide" data-in="fade">
+              <div class="block-img" data-fixed
+                style="background-image: url('./assets/images/main-page/slider/third-slide.jpeg')">
+                <div class="blackout"></div>
+              </div>
+              <h1 data-out="left">
+                <span class="container">We offer</span>
+              </h1>
+              <div data-delay="400" data-out="left" class="text">
+                <span class="container">a high level of service in the field of technology</span>
+              </div>
+              <div class="button-feed-back container" data-in="bottom" data-out="left" data-delay="500">
+                <button>Request a call</button>
+              </div>
+            </div>
+            <div class="slide" data-in="fade">
+              <div class="block-img" data-fixed
+                style="background-image: url('./assets/images/main-page/slider/fourth-slide.jpg')">
+                <div class="blackout"></div>
+              </div>
+              <h1 data-out="left">
+                <span class="container">Professional software is</span>
+              </h1>
+              <div data-delay="400" data-out="left" class="text">
+                <span class="container">the key to a successful business</span>
+              </div>
+              <div class="button-feed-back container" data-in="bottom" data-out="left" data-delay="500">
+                <button>Request a call</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <div class="container">
+            <ul class="list-social-links">
+              <li class="social-link-item">
+                <a href="#">
+                  <span class="soc-icon">
+                    <img src="./assets/images/main-page/social-icons/vk-icon.svg" alt="vkontakte" />
+                  </span>
+                  <span class="soc-name">vkontakte</span>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#">
+                  <span class="soc-icon">
+                    <img src="./assets/images/main-page/social-icons/facebook-icon.svg" alt="facebook" />
+                  </span>
+                  <span class="soc-name">facebook</span>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#">
+                  <span class="soc-icon">
+                    <img src="./assets/images/main-page/social-icons/twitter-icon.svg" alt="twitter" />
+                  </span>
+                  <span class="soc-name">twitter</span>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#">
+                  <span class="soc-icon">
+                    <img src="./assets/images/main-page/social-icons/instagram-icon.svg" alt="instagram" />
+                  </span>
+                  <span class="soc-name">instagram</span>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#">
+                  <span class="soc-icon">
+                    <img src="./assets/images/main-page/social-icons/youtube-icon.svg" alt="youtube" />
+                  </span>
+                  <span class="soc-name">youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="services-section section" id="services">
+        <div class="container">
+          <h1 class="title-page">Our services</h1>
+          <h3 class="description-section">
+            Our company is engaged in the development of software of any level of complexity. Team
+            high-class developers will allow you to find the business solution you need specifically and successfully
+            to realize as soon as possible.
+          </h3>
+
+          <div class="services-list">
+            <div class="service-box">
+              <div class="icon-service">
+                <img src="./assets/images/main-page/services-icons/turnkey-websites.svg" alt="icon" />
+              </div>
+              <h2 class="title">Turnkey Sites</h2>
+              <div class="description">
+                We offer the development of a comprehensive package of services for creating your personal website of
+                any level complexity, with the ability to connect internal customer systems, external analytical
+                systems, development proprietary data analysis systems that meet the specifics of your business project.
+              </div>
+              <div class="btn-feedback">
+                <button>
+                  order
+                  <span class="btn-arrow">
+                    <img src="./assets/images/main-page/right-arrow-orange.svg" alt="arrow">
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-service">
+                <img src="./assets/images/main-page/services-icons/mobile-applications.svg" alt="icon" />
+              </div>
+              <h2 class="title">Mobile applications</h2>
+              <div class="description">
+                We develop ergonomic mobile tools of any complexity for the comfort of your customers. We will help make
+                your business more accessible, optimize business processes and make your services and products
+                Attractive on any smartphone or tablet.
+              </div>
+              <div class="btn-feedback">
+                <button>
+                  order
+                  <span class="btn-arrow">
+                    <img src="./assets/images/main-page/right-arrow-orange.svg" alt="arrow">
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-service">
+                <img src="./assets/images/main-page/services-icons/software-development.svg" alt="icon" />
+              </div>
+              <h2 class="title">Software</h2>
+              <div class="description">
+                We provide a full cycle of professional services in the field of software development of any complexity
+                -design, writing, testing and support of computer programs in order to solve your problems business. We
+                create reliable solutions that stand the test of time, design a product from scratch, ready to expand.
+              </div>
+              <div class="btn-feedback">
+                <button>
+                  order
+                  <span class="btn-arrow">
+                    <img src="./assets/images/main-page/right-arrow-orange.svg" alt="arrow">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advantages-section">
+        <div class="container">
+          <div class="title-section">Why us</div>
+          <div class="advantages-list">
+            <div class="advantage-box">
+              <div class="title">Individual approach</div>
+              <div class="description">We are sensitive to each of our customers and are always ready to offer exclusive
+                solutions and to hear and realize your every idea</div>
+            </div>
+            <div class="advantage-box">
+              <div class="title">Highly qualified staff</div>
+              <div class="description">Our employees have many years of experience in various fields and stages of
+                development software</div>
+            </div>
+            <div class="advantage-box">
+              <div class="title">Official contract</div>
+              <div class="description">we work under a previously concluded contract and bear the fulla responsibility
+                behind fulfillment of one’s obligations</div>
+            </div>
+            <div class="advantage-box">
+              <div class="title">Quality software</div>
+              <div class="description">We provide a wide range of services in the field of software quality assessment
+                providing and We are also responsible for the quality of the software we develop.</div>
+            </div>
+            <div class="advantage-box">
+              <div class="title">Unique projects</div>
+              <div class="description">We develop non-standard solutions for your business</div>
+            </div>
+            <div class="advantage-box">
+              <div class="title">Modern toolkit</div>
+              <div class="description">Rest assured that according to the results of our cooperation you will receive a
+                progressive a work tool that meets the latest standards in software development and quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stages-development">
+        <div class="container">
+          <div class="title-page-section">Stages of cooperation</div>
+          <div class="stages-development-list">
+            <div class="stage-development-box">
+              <div class="title"><span class="number">1</span>Request</div>
+              <div class="description-box">
+                <div class="description">You can leave a request on the website or call directly to the office and make
+                  an appointment</div>
+              </div>
+            </div>
+            <div class="stage-development-box">
+              <div class="title"><span class="number">2</span>Discussion</div>
+              <div class="description-box">
+                <div class="description">We discuss your business ideas directly in the office or in any way convenient
+                  for you</div>
+              </div>
+            </div>
+            <div class="stage-development-box">
+              <div class="title"><span class="number">3</span>Contract signing</div>
+              <div class="description-box">
+                <div class="description">Legalize our cooperation</div>
+              </div>
+            </div>
+            <div class="stage-development-box">
+              <div class="title"><span class="number">4</span>Development</div>
+              <div class="description-box">
+                <div class="description">We carry out a full cycle of software development and implementation indicated
+                  in a business idea contract</div>
+              </div>
+            </div>
+            <div class="stage-development-box">
+              <div class="title"><span class="number">5</span>Acceptance of work</div>
+              <div class="description-box">
+                <div class="description">Transfer of the finished product directly to the customer and control over the
+                  implementation of all contractual obligations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients" id="clients">
+        <div class="container">
+          <div class="clients-box">
+            <div class="title-page-section">Our clients</div>
+            <div class="description-section">Despite the youth of our company, we have already managed to work with such
+              serious representatives of the business environment.</div>
+            <div class="clients-list">
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-1.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Nulla quis urna a</div>
+                  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-2.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Nulla ac</div>
+                  <div class="description">Vestibulum scelerisque elementum arcu a ullamcorper. Proin neque odio,
+                    suscipit
+                    vel tempus vitae, interdum ac.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-3.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Praesent at nibh congue</div>
+                  <div class="description">Etiam quis sagittis ante. Mauris vitae condimentum orci. Curabitur lacinia
+                    arcu
+                    tellus, eget aliquet risus semper sed. Nulla.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-4.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Donec luctus</div>
+                  <div class="description">Sed arcu leo, pulvinar vitae interdum eu, bibendum nec sem. Lorem ipsum dolor
+                    sit amet, consectetur.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-5.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Donec eu enim non</div>
+                  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id mauris ut
+                    massa venenatis.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-6.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">In id dolor quam</div>
+                  <div class="description">In hac habitasse platea dictumst. Cras nec venenatis augue. Praesent.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-7.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Curabitur non metus</div>
+                  <div class="description">Suspendisse sit amet nisl scelerisque, elementum magna tempor, ultricies
+                    sapien. Curabitur tincidunt risus eu ex hendrerit.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-8.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Pellentesque habitant morbi</div>
+                  <div class="description">Praesent convallis egestas aliquet. Integer molestie arcu vitae ex tincidunt
+                    porttitor..</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-9.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Quisque commodo</div>
+                  <div class="description">Nam enim mauris, aliquet nec quam nec, bibendum elementum quam. Aenean
+                    pulvinar
+                    lacus sed molestie.</div>
+                </div>
+              </div>
+              <div class="client-box">
+                <img src="./assets/images/main-page/clients-icons/bw_organization-10.png" alt="logo">
+                <div class="description-client">
+                  <div class="title">Phasellus justo felis</div>
+                  <div class="description">Aliquam erat volutpat. Suspendisse potenti. In varius sodales pellentesque.
+                    Maecenas in facilisis nibh.</div>
+                </div>
+              </div>
+            </div>
+            <div class="call-to-action">We strive to expand our list of grateful customers by daily improving the
+              quality
+              of
+              the supplied software. Our company is developing in the following main areas of activity</div>
+            <div class="button-feed-back black-btn align-end"><button>Become our client</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-directions" id="directions">
+        <div class="directions-box">
+          <div class="title-section">Our directions</div>
+          <ul class="directions-list">
+            <li class="direction-item">E-commerce Solutions</li>
+            <li class="direction-item">Software development services for call centers</li>
+            <li class="direction-item">Web-based solutions</li>
+            <li class="direction-item">Mobile applications</li>
+            <li class="direction-item">CRM and ERM systems</li>
+            <li class="direction-item">Software Testing</li>
+            <li class="direction-item">Software Testing Automation</li>
+            <li class="direction-item">Business analysis and software requirements</li>
+            <li class="direction-item">SEO optimization</li>
+            <li class="direction-item">Business process automation systems</li>
+            <li class="direction-item">Outstaffing</li>
+            <li class="direction-item">Business Process Outsourcing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="technologies-section" id="technologies">
+        <div class="container">
+          <div class="title-page-section">Technology stack</div>
+          <div class="languages-subsection subsection">
+            <div class="title">Languages:</div>
+            <ul class="languages-list list">
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/html.svg" alt="HTML5"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/css.svg" alt="CSS3"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/javascript.svg"
+                    alt="JavaScript">
+                </div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/java.svg" alt="Java"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/c-plus.svg" alt="C++"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/c-sharp.svg" alt="C#"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/perl.svg" alt="Perl"></div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/swift.svg" alt="Swift">
+                </div>
+              </li>
+              <li class="language-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/php.svg" alt="PHP"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="technologies-subsection subsection">
+            <div class="title">Technology:</div>
+            <ul class="technologies-list list">
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/react.svg" alt="react">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/angular.svg" alt="angular">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/vue.svg" alt="vue">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/asp-net.svg" alt="asp-net">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/net.svg" alt=".net">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/soap.svg" alt="soap">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/win-api.svg" alt="win-api">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/xml.svg" alt="xml"></div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/xpath.svg" alt="xpath">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/xslt.svg" alt="xslt">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/apache.svg" alt="apache">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/nginx.svg" alt="nginx">
+                </div>
+              </li>
+              <li class="technologie-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/tomcat.svg" alt="tomcat">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="databases-subsection subsection">
+            <div class="title">Databases:</div>
+            <ul class="databases-list list">
+              <li class="database-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/mysql.svg" alt="mysql">
+                </div>
+              </li>
+              <li class="database-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/oracle.svg" alt="oracle">
+                </div>
+              </li>
+              <li class="database-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/sql.svg" alt="sql"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-platforms-subsection subsection">
+            <div class="title">Mobile platforms:</div>
+            <ul class="mobile-platforms-list list">
+              <li class="mobile-platform-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/ios.svg" alt="ios">
+                </div>
+              </li>
+              <li class="mobile-platform-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/wphone.svg" alt="wphone"></div>
+              </li>
+              <li class="mobile-platform-box">
+                <div class="icon"><img src="./assets/images/main-page/technologies-icons/android.svg" alt="android">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="title-section">Contact with us</div>
+        <div class="feedback-form">
+          <form>
+            <div class="input-group"><label for="name">Your name</label><input type="text"></div>
+            <div class="input-group"><label for="name">Company name</label><input type="text"></div>
+            <div class="input-group"><label for="name">Your phone number</label><input type="text"></div>
+            <div class="input-group"><label for="name">Your e-mail</label><input type="text"></div>
+            <div class="input-group message"><label for="name">Your message</label><textarea type="text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="contacts" id="contacts">
+          <div class="title">Contacts</div>
+          <div class="address">
+            <div class="title-address">
+              Yerevan, Armenia
+            </div>
+          </div>
+          <div class="phones">
+            <div class="title-phones">
+              phones
+            </div>
+            <div class="phone">
+              +374 (94) 09-06-66
+            </div>
+            <div class="phone">
+              +374 (77) 16-63-38
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">© 2021 Artak Harutyunyan All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/jquery.fractionslider.min.js"></script>
+  <script type="text/javascript" src="./scripts/particles.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+
+</html>
