@@ -1,0 +1,288 @@
+@import './variables.less';
+
+.footer {
+  padding: 50px 0 0;
+  position: relative;
+  background-image: url("../assets/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      padding: 30px 0 0;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 1, 16, 0.7);
+    z-index: 1;
+  }
+
+  >.container {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    font-weight: 300;
+
+    @media screen {
+      @media (max-width: @screen-md) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .title-section {
+      color: #ffffff;
+      font-size: 40px;
+      padding-right: 60px;
+      flex: 0 0 25%;
+      max-width: 25%;
+
+      @media screen {
+        @media (max-width: @screen-lg) {
+          font-size: 32px;
+        }
+
+        @media (max-width: @screen-md) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 30px;
+          font-size: 30px;
+          text-align: center;
+          padding-right: 0;
+        }
+
+        @media (max-width: @screen-sm) {
+          font-size: 24px;
+        }
+
+        @media (max-width: @screen-xs) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .feedback-form {
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding-bottom: 50px;
+
+      @media screen {
+        @media (max-width: @screen-md) {
+          padding-bottom: 0;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media screen {
+          @media (max-width: @screen-xs) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+
+        .input-group {
+          flex: 0 0 50%;
+          max-width: 50%;
+          padding: 0 20px 30px;
+
+          @media screen {
+            @media (max-width: @screen-md) {
+              padding: 0 20px 20px;
+            }
+
+            @media (max-width: @screen-xs) {
+              padding: 0 5px 5px;
+            }
+          }
+
+          &.message {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            textarea {
+              width: 100%;
+              min-height: 300px;
+              background-color: rgba(0, 0, 0, 0.3);
+              border: 2px solid #ffffff;
+              color: #ffffff;
+              border-radius: 3px;
+              resize: none;
+              font-size: 16px;
+              font-weight: 300;
+              padding: 15px;
+
+              @media screen {
+                @media (max-width: @screen-md) {
+                  min-height: 200px
+                }
+
+                @media (max-width: @screen-sm) {
+                  min-height: 150px
+                }
+              }
+            }
+          }
+
+          label {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 10px;
+
+            @media screen {
+
+              @media (max-width: @screen-xs) {
+                font-size: 12px;
+                margin-bottom: 5px;
+              }
+            }
+          }
+
+          input {
+            width: 100%;
+            height: 45px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #ffffff;
+            color: #e7c1c1;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 0 15px;
+
+            @media screen {
+              @media (max-width: @screen-sm) {
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contacts {
+      padding-left: 60px;
+      color: #ffffff;
+      flex: 0 0 25%;
+      max-width: 25%;
+
+      @media screen {
+        @media (max-width: @screen-md) {
+          padding-left: 0;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-bottom: 30px;
+        }
+      }
+
+      .title {
+        font-size: 34px;
+        margin-bottom: 40px;
+
+        @media screen {
+          @media (max-width: @screen-lg) {
+            font-size: 28px;
+          }
+
+          @media (max-width: @screen-md) {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+
+          @media (max-width: @screen-xs) {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .phones {
+        font-size: 22px;
+
+        @media screen {
+          @media (max-width: @screen-md) {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          @media (max-width: @screen-xs) {
+            font-size: 14px;
+          }
+        }
+
+        .title-phones {
+          margin-bottom: 15px;
+
+          @media screen {
+            @media (max-width: @screen-md) {
+              font-size: 24px;
+            }
+
+            @media (max-width: @screen-sm) {
+              font-size: 22px;
+            }
+
+            @media (max-width: @screen-xs) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .phone {
+          &+.phone {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .address {
+        font-size: 22px;
+        margin-bottom: 40px;
+
+        @media screen {
+          @media (max-width: @screen-md) {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          @media (max-width: @screen-xs) {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .title-address {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    padding: 10px 0;
+    font-size: 13px;
+
+    @media screen {
+      @media (max-width: @screen-xs) {
+        font-size: 12px;
+      }
+    }
+  }
+}

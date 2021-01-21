@@ -1,0 +1,704 @@
+@import './variables.less';
+@import './_base.less';
+@import './_header.less';
+@import './_footer.less';
+@import './_main-page.less';
+@import './_corporate-website.less';
+@import './_online-store.less';
+@import './_business-card-website.less';
+@import './_landing-page.less';
+@import './_software-development.less';
+@import './_mobile-applications.less';
+@import './_seo-optimization.less';
+@import './_turnkey-sites.less';
+
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.title-page {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 400;
+
+  @media screen {
+    @media (max-width: @screen-md) {
+      font-size: 26px;
+    }
+
+    @media (max-width: @screen-xs) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen {
+    @media (max-width: @screen-xs) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    width: 70px;
+    margin-left: -35px;
+    background-color: #2d66bc;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    width: 10px;
+    margin-left: -8px;
+    border-right: 3px solid @gray-color;
+    border-left: 3px solid @gray-color;
+    background-color: #ff6500;
+    z-index: 2;
+  }
+}
+
+.description-section {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      font-size: 16px;
+    }
+
+    @media (max-width: @screen-xs) {
+      font-size: 14px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &.white {
+    color: #ffffff;
+    font-weight: 300;
+  }
+}
+
+.call-to-action {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 1200px;
+  margin: 40px auto 40px;
+  position: relative;
+  z-index: 2;
+
+  &.white {
+    color: #ffffff;
+  }
+
+  @media screen {
+    @media (max-width: @screen-md) {
+      font-size: 16px;
+    }
+
+    @media (max-width: @screen-sm) {
+      font-size: 14px;
+      margin: 20px auto 20px;
+    }
+  }
+}
+
+.button-feed-back {
+  position: relative;
+  z-index: 1000;
+
+  &.align-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.align-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &.black-btn {
+    button {
+      color: @black-color;
+      border: 2px solid @black-color;
+
+      &:hover {
+        color: #ffffff;
+        background-color: @black-color;
+      }
+    }
+  }
+
+  button,
+  input,
+  a {
+    cursor: pointer;
+    height: 45px;
+    padding: 0 30px;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: transparent;
+    position: relative;
+    z-index: 100;
+    transition: .3s;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    min-width: 200px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    @media screen {
+      @media (max-width: @screen-md) {
+        height: 35px;
+        font-size: 14px;
+        padding: 0 15px;
+      }
+
+      @media (max-width: @screen-xs) {
+        height: 30px;
+        font-size: 13px;
+        padding: 0 10px;
+      }
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: @black-color;
+    }
+  }
+}
+
+.stages-development-section {
+  margin: 70px 0;
+  flex: 0 0 100%;
+  min-height: 200px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    background-color: @black-color;
+  }
+
+  @media screen {
+
+    @media (max-width: @screen-xs) {
+      margin: 50px 0;
+    }
+  }
+
+  .container {
+    @media screen {
+      @media (max-width: @screen-lg) {
+        padding: 0;
+      }
+    }
+  }
+
+  .list-stages {
+    box-shadow: 0 0 18px rgba(19, 19, 19, 0.5);
+    padding: 30px 20px;
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    @media screen {
+      @media (max-width: @screen-sm) {
+        padding: 20px 15px;
+      }
+    }
+  }
+
+  .title-description {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen {
+      @media (max-width: @screen-sm) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  ul {
+    font-weight: 300;
+    color: #4f4545;
+
+    li {
+      position: relative;
+
+      span {
+        font-weight: 600;
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 3px;
+        color: #000000;
+
+        @media screen {
+          @media (max-width: @screen-sm) {
+            font-size: 14px;
+          }
+        }
+
+        span {
+          flex: 0 0 20px;
+        }
+      }
+
+      p {
+        padding-left: 20px;
+
+        @media screen {
+          @media (max-width: @screen-sm) {
+            font-size: 13px;
+          }
+
+          @media (max-width: @screen-xs) {
+            font-size: 12px;
+          }
+        }
+
+        &+p {
+          margin-top: 5px;
+        }
+      }
+
+      &+li {
+        margin-top: 20px;
+
+        @media screen {
+          @media (max-width: @screen-sm) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.description-advantages {
+  text-align: center;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      font-size: 14px;
+    }
+
+    @media (max-width: @screen-xs) {
+      font-size: 12px;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+.table-advantages {
+  margin-bottom: 40px;
+
+  .title-advantages {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen {
+      @media (max-width: @screen-sm) {
+        font-size: 20px;
+      }
+
+      @media (max-width: @screen-xs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .list {
+    color: #6f6d6d;
+
+    .item-list {
+      background-size: 15px 15px;
+      background-position: 0% 1px;
+      background-repeat: no-repeat;
+
+      .block-title {
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+
+        .icon {
+          margin-right: 10px;
+
+          img {
+            height: 30px;
+
+            @media screen {
+              @media (max-width: @screen-sm) {
+                height: 20px;
+              }
+            }
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+          color: #000000;
+
+          @media screen {
+            @media (max-width: @screen-sm) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .block-text {
+        font-size: 15px;
+        font-weight: 300;
+
+        @media screen {
+          @media (max-width: @screen-sm) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .item-list {
+      font-weight: 300;
+
+      @media screen {
+        @media (max-width: @screen-sm) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .item-list+.item-list {
+      margin-top: 20px;
+    }
+  }
+}
+
+.advantages-greed {
+  padding-bottom: 100px;
+  position: relative;
+
+  @media screen {
+    @media (max-width: @screen-md) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: @screen-sm) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-color: @black-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .title-advantages {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen {
+      @media (max-width: @screen-sm) {
+        font-size: 20px;
+      }
+
+      @media (max-width: @screen-xs) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .list-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+
+    @media screen {
+      @media (max-width: @screen-lg) {
+        padding: 10px;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 100px;
+      height: 100px;
+      border-top: 2px solid #222222;
+      border-left: 2px solid #222222;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+
+      @media screen {
+        @media (max-width: @screen-lg) {
+          display: none;
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 100px;
+      height: 100px;
+      border-bottom: 2px solid #ffffff;
+      border-right: 2px solid #ffffff;
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+
+      @media screen {
+        @media (max-width: @screen-lg) {
+          display: none;
+        }
+      }
+    }
+
+    .wrapper-column-list {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 20px;
+
+      @media screen {
+        @media (max-width: @screen-lg) {
+          padding: 0 5px;
+        }
+
+        @media (max-width: @screen-sm) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+
+      .column-list {
+        height: 100%;
+        padding: 5px 15px 15px;
+        border-bottom: 2px solid @black-color;
+
+        @media screen {
+          @media (max-width: @screen-sm) {
+            padding: 5px 0;
+          }
+        }
+
+        &.no-border {
+          border: none;
+
+          @media screen {
+            @media (max-width: @screen-sm) {
+              border-bottom: 2px solid @black-color;
+            }
+          }
+        }
+
+        .heading-column {
+          height: 65px;
+          justify-content: center;
+          align-items: center;
+          display: none !important;
+
+          .block-icon {
+            padding: 10px;
+            background-color: #1a6ce8;
+            border-radius: 50%;
+          }
+
+          img {
+            height: 30px;
+          }
+        }
+
+        .column-title {
+          font-size: 18px;
+          padding-top: 30px;
+
+          @media screen {
+            @media (max-width: @screen-sm) {
+              padding-top: 15px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .column-description {
+          padding: 15px 0;
+          font-size: 15px;
+          color: #6f6d6d;
+          font-weight: 300;
+
+          @media screen {
+            @media (max-width: @screen-sm) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        .no-border {
+          @media screen {
+            @media (max-width: @screen-sm) {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 100px 0;
+
+  @media screen {
+    @media (max-width: @screen-md) {
+      padding: 50px 0;
+    }
+
+    @media (max-width: @screen-sm) {
+      padding: 30px 0;
+    }
+  }
+}
+
+body {
+
+  div#rn-pbwp-div {
+    position: absolute;
+    z-index: 10;
+    background-color: transparent !important;
+
+    @media screen {
+      @media (max-width: @screen-md) {
+        height: 600px;
+      }
+
+      @media (max-width: @screen-sm) {
+        height: 400px;
+      }
+
+      @media (max-width: @screen-xs) {
+        height: 300px;
+      }
+    }
+  }
+}
+
+@keyframes show-dropdown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.block-info {
+  .container {
+    width: 100%;
+  }
+}
+
+.portfolio-box {
+  padding: 160px 0 60px;
+
+  #typed-strings,
+  .typed {
+    display: none !important;
+  }
+
+  .title-section {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .info-customer {
+    display: flex;
+    margin-bottom: 50px;
+
+    .logo-customer {
+      flex: 0 0 200px;
+    }
+
+    .description-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .name-customer {
+        margin-bottom: 20px;
+      }
+
+      .name-customer,
+      .task-info {
+        font-size: 16px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .customer-advantages {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}

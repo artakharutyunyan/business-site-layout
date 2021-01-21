@@ -1,0 +1,128 @@
+@import './variables.less';
+
+.landing-page-content {
+	.block-info {
+		&:before {
+			background-image: url(../assets/images/landing-page/info-landing-page.jpg);
+		}
+	}
+	.types-list-landing-page {
+		flex: 0 0 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.title-list {
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.list {
+			margin-right: -20px;
+			margin-left: -20px;
+			display: flex;
+			flex-wrap: wrap;
+			@media screen {
+				@media (max-width: @screen-md) {
+					margin-right: -10px;
+					margin-left: -10px;
+				}
+				@media (max-width: @screen-sm) {
+					margin-right: 0;
+					margin-left: 0;
+				}
+			}
+			.wrapper-column-list {
+				flex: 0 0 50%;
+				max-width: 50%;
+				padding: 0 20px;
+				margin-bottom: 40px;
+				position: relative;
+				@media screen {
+					@media (max-width: @screen-md) {
+						padding: 0 10px;
+					}
+					@media (max-width: @screen-sm) {
+						flex: 0 0 100%;
+						max-width: 100%;
+						padding: 0;
+						margin-bottom: 20px;
+					}
+				}
+				.column-list {
+					box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+					border-bottom: 2px solid #222222;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					background-color: #ffffff;
+					padding-top: 10px;
+					.column-heading {
+						display: flex;
+						align-items: center;
+						margin-bottom: 20px;
+						flex-direction: column;
+						.block-icon {
+							margin: 10px 0;
+							img {
+								height: 35px;
+							}
+						}
+					}
+					.column-title {
+						font-size: 18px;
+						text-align: center;
+						@media screen {
+							@media (max-width: @screen-md) {
+								font-size: 16px;
+							}
+						}
+					}
+					.column-description {
+						padding: 0 20px 15px;
+						color: #6f6d6d;
+						font-weight: 300;
+						@media screen {
+							@media (max-width: @screen-md) {
+								font-size: 13px;
+							}
+						}
+						p + p {
+							margin-top: 5px;
+						}
+					}
+					.button {
+						padding-bottom: 20px;
+						display: flex;
+						align-items: flex-end;
+						justify-content: center;
+						flex: 1;
+						button {
+							width: 150px;
+							height: 40px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border: 2px solid #1a6ce8;
+							background-color: #1a6ce8;
+							color: #ffffff;
+							text-decoration: none;
+							font-weight: 300;
+							transition: .5s;
+							font-size: 14px;
+							@media screen {
+								@media (max-width: @screen-md) {
+									height: 35px;
+									width: 130px;
+								}
+							}
+							@media screen {
+								@media (max-width: @screen-sm) {
+									height: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
